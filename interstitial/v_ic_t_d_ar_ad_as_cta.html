@@ -1,0 +1,472 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    a,hr{color:inherit}progress,sub,sup{vertical-align:baseline}blockquote,body,dd,dl,fieldset,figure,h1,h2,h3,h4,h5,h6,hr,menu,ol,p,pre,ul{margin:0}dialog,fieldset,legend,menu,ol,ul{padding:0}.-translate-x-1,.-translate-x-1\/2,.-translate-y-1,.-translate-y-1\/2,.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.bg-\[\#0085FF\],.bg-\[\#64738D\],.bg-\[\#818386\],.bg-\[\#919FAF\],.bg-black,.bg-sky-800,.bg-slate-400,.bg-slate-600,.bg-white{--tw-bg-opacity:1}.transition,.transition-all{transition-timing-function:cubic-bezier(0.4,0,0.2,1);transition-duration:150ms}*,::after,::before{box-sizing:border-box;border:0 solid #e5e7eb;--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{line-height:inherit}hr{height:0;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}menu,ol,ul{list-style:none}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}.hidden,[hidden]{display:none}::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.pointer-events-none{pointer-events:none}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.inset-x-0{left:0;right:0}.bottom-0{bottom:0}.bottom-\[1\%\]{bottom:1%}.bottom-\[12\.5\%\]{bottom:12.5%}.bottom-\[2\%\]{bottom:2%}.bottom-\[5\.5\%\]{bottom:5.5%}.left-0{left:0}.left-1{left:.25rem}.left-1\/2{left:50%}.left-\[15\%\]{left:15%}.left-\[2\%\]{left:2%}.left-\[4\%\]{left:4%}.right-0{right:0}.right-\[1\%\]{right:1%}.right-\[2\%\]{right:2%}.right-\[25\%\]{right:25%}.right-\[3\%\]{right:3%}.right-\[4\%\]{right:4%}.top-1{top:.25rem}.top-1\/2{top:50%}.top-\[1\%\]{top:1%}.top-\[10\.5\%\]{top:10.5%}.top-\[12\.5\%\]{top:12.5%}.top-\[2\%\]{top:2%}.top-\[41\.5\%\]{top:41.5%}.top-\[43\.5\%\]{top:43.5%}.top-0{top:0}.top-\[-15vh\]{top:-15vh}.z-10{z-index:10}.mx-\[4vw\]{margin-left:4vw;margin-right:4vw}.mx-auto{margin-left:auto;margin-right:auto}.my-\[2\%\]{margin-top:2%;margin-bottom:2%}.my-\[4\%\]{margin-top:4%;margin-bottom:4%}.my-auto{margin-top:auto;margin-bottom:auto}.mb-\[2vh\]{margin-bottom:2vh}.ml-\[2\%\]{margin-left:2%}.ml-\[3\%\]{margin-left:3%}.ml-\[4vw\]{margin-left:4vw}.mr-\[1vw\]{margin-right:1vw}.mr-\[3\%\]{margin-right:3%}.mr-\[30\%\]{margin-right:30%}.mt-\[1vh\]{margin-top:1vh}.mt-\[2vh\]{margin-top:2vh}.mt-\[3vh\]{margin-top:3vh}.mt-auto{margin-top:auto}.flex{display:flex}.table{display:table}.aspect-\[3\/2\]{aspect-ratio:3/2}.aspect-\[52\/16\]{aspect-ratio:52/16}.aspect-\[9\/16\]{aspect-ratio:9/16}.aspect-square{aspect-ratio:1/1}.aspect-video{aspect-ratio:16/9}.h-40{height:10rem}.h-80{height:20rem}.h-\[0\.5vh\]{height:.5vh}.h-\[14vw\]{height:14vw}.h-\[20vh\]{height:20vh}.h-\[20vw\]{height:20vw}.h-\[25\%\]{height:25%}.h-\[3\%\]{height:3%}.h-\[3vh\]{height:3vh}.h-\[40vh\]{height:40vh}.h-\[50\%\]{height:50%}.h-\[6vh\]{height:6vh}.h-\[80\%\]{height:80%}.h-\[85\%\]{height:85%}.h-\[8vw\]{height:8vw}.h-\[90vh\]{height:90vh}.h-auto{height:auto}.h-full,body,html{height:100%}.h-\[13vh\]{height:13vh}.h-\[15vh\]{height:15vh}.h-\[11vh\]{height:11vh}.h-\[10vh\]{height:10vh}.w-0{width:0}.w-1{width:.25rem}.w-1\/2{width:50%}.w-3{width:.75rem}.w-80{width:20rem}.w-\[10vw\]{width:10vw}.w-\[12\%\]{width:12%}.w-\[16\%\]{width:16%}.w-\[1px\]{width:1px}.w-\[20vw\]{width:20vw}.w-\[25\%\]{width:25%}.w-\[25vw\]{width:25vw}.w-\[3\%\]{width:3%}.w-\[3vh\]{width:3vh}.w-\[5\%\]{width:5%}.w-\[6\%\]{width:6%}.w-\[6vw\]{width:6vw}.w-\[70\%\]{width:70%}.w-\[94vw\]{width:94vw}.w-auto{width:auto}.w-full,body,html{width:100%}.w-\[50vw\]{width:50vw}.w-\[80\%\]{width:80%}.max-w-\[80\%\]{max-width:80%}.max-w-\[92vw\]{max-width:92vw}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1{--tw-translate-x:-0.25rem}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-y-1{--tw-translate-y:-0.25rem}.-translate-y-1\/2{--tw-translate-y:-50%}.resize{resize:both}.snap-x{scroll-snap-type:x var(--tw-scroll-snap-strictness)}.snap-mandatory{--tw-scroll-snap-strictness:mandatory}.snap-start{scroll-snap-align:start}.snap-center{scroll-snap-align:center}.scroll-mx-0{scroll-margin-left:0px;scroll-margin-right:0px}.scroll-mx-6{scroll-margin-left:1.5rem;scroll-margin-right:1.5rem}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-6{gap:1.5rem}.gap-\[0\.7vh\]{gap:.7vh}.gap-\[1vh\]{gap:1vh}.gap-\[1vw\]{gap:1vw}.gap-\[2\%\]{gap:2%}.gap-\[2vw\]{gap:2vw}.gap-\[3vw\]{gap:3vw}.gap-\[4vw\]{gap:4vw}.gap-\[6vh\]{gap:6vh}.divide-x>:not([hidden])~:not([hidden]){--tw-divide-x-reverse:0;border-right-width:calc(1px * var(--tw-divide-x-reverse));border-left-width:calc(1px * calc(1 - var(--tw-divide-x-reverse)))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.line-clamp-1,.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical}.break-all{word-break:break-all}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.rounded-t-2xl{border-top-left-radius:1rem;border-top-right-radius:1rem}.rounded-t-3xl{border-top-left-radius:1.5rem;border-top-right-radius:1.5rem}.rounded-t-xl{border-top-left-radius:.75rem;border-top-right-radius:.75rem}.rounded-b-md{border-bottom-right-radius:.375rem;border-bottom-left-radius:.375rem}.bg-\[\#0085FF\]{background-color:rgb(0 133 255 / var(--tw-bg-opacity))}.bg-\[\#64738D\]{background-color:rgb(100 115 141 / var(--tw-bg-opacity))}.bg-\[\#818386\]{background-color:rgb(129 131 134 / var(--tw-bg-opacity))}.bg-\[\#919FAF\]{background-color:rgb(145 159 175 / var(--tw-bg-opacity))}.bg-black{background-color:rgb(0 0 0 / var(--tw-bg-opacity))}.bg-sky-800{background-color:rgb(7 89 133 / var(--tw-bg-opacity))}.bg-slate-400{background-color:rgb(148 163 184 / var(--tw-bg-opacity))}.bg-slate-600{background-color:rgb(71 85 105 / var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-white{background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-opacity-40{--tw-bg-opacity:0.4}.bg-opacity-60{--tw-bg-opacity:0.6}.bg-opacity-70{--tw-bg-opacity:0.7}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.from-\[\#E0F0FF\]{--tw-gradient-from:#E0F0FF var(--tw-gradient-from-position);--tw-gradient-to:rgb(224 240 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-white{--tw-gradient-to:#fff var(--tw-gradient-to-position)}.object-contain{-o-object-fit:contain;object-fit:contain}.px-\[1\.5vw\]{padding-left:1.5vw;padding-right:1.5vw}.px-\[2vw\]{padding-left:2vw;padding-right:2vw}.px-\[3vw\]{padding-left:3vw;padding-right:3vw}.py-\[1vh\]{padding-top:1vh;padding-bottom:1vh}.pb-14{padding-bottom:3.5rem}.pl-\[2\%\]{padding-left:2%}.pl-\[3\%\]{padding-left:3%}.text-center{text-align:center}.text-\[2\.5vw\]{font-size:2.5vw}.text-\[3\.5vw\]{font-size:3.5vw}.text-\[3vw\]{font-size:3vw}.text-\[4vw\]{font-size:4vw}.text-\[6vw\]{font-size:6vw}.text-\[7vw\]{font-size:7vw}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-none{line-height:1}.leading-tight{line-height:1.25}.text-\[\#0085FF\]{--tw-text-opacity:1;color:rgb(0 133 255 / var(--tw-text-opacity))}.text-\[\#2A3C5D\]{--tw-text-opacity:1;color:rgb(42 60 93 / var(--tw-text-opacity))}.text-\[\#64738D\]{--tw-text-opacity:1;color:rgb(100 115 141 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1),0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter}.transition-all{transition-property:all}.duration-300{transition-duration:.3s}.duration-700{transition-duration:.7s}.line-clamp-1{-webkit-line-clamp:1}.line-clamp-2{-webkit-line-clamp:2}@media (min-width:400px){.sm\:-ml-\[2px\]{margin-left:-2px}.sm\:w-96{width:24rem}}
+  </style>
+</head>
+
+<body class="relative">
+  <button onclick="onCloseButtonClick()"
+    class="h-[3%] absolute top-[2%] right-[2%] aspect-square bg-[#919FAF] rounded-lg flex items-center justify-center z-10">
+    <svg width="40%" height="40%" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M7.32195 1.42902C7.46105 1.56811 7.44418 1.72407 7.27137 1.89688L5.09644 4.07182L7.25873 6.23411C7.3346 6.30998 7.37885 6.39217 7.3915 6.48069C7.39993 6.56499 7.37253 6.63875 7.30931 6.70197L6.6897 7.32158C6.55061 7.46067 6.39465 7.44381 6.22184 7.271L4.05955 5.10871L1.89726 7.271C1.72444 7.44381 1.56849 7.46067 1.42939 7.32158L0.809791 6.70197C0.746566 6.63875 0.719169 6.56499 0.727599 6.48069C0.740243 6.39217 0.784501 6.30998 0.860371 6.23411L3.02266 4.07182L0.847726 1.89688C0.674911 1.72407 0.658051 1.56811 0.797146 1.42902L1.41675 0.809416C1.47997 0.746192 1.55795 0.723009 1.65068 0.739869C1.7392 0.752514 1.81717 0.792556 1.88461 0.859996L4.05955 3.03493L6.23448 0.859996C6.30192 0.792556 6.3799 0.752514 6.46842 0.739869C6.56114 0.723009 6.63912 0.746191 6.70235 0.809416L7.32195 1.42902Z"
+        fill="white" />
+    </svg>
+  </button>
+  <div onclick="onBack()" id="about"
+    class="hidden absolute inset-0 w-full h-full z-10 bg-black bg-opacity-70 items-end">
+    <div class="bg-white  rounded-t-2xl w-full h-[20vh] flex flex-col">
+      <div class="h-[0.5vh] w-[10vw] bg-[#64738D] rounded-full mx-auto mt-[2vh]"></div>
+      <div onclick="aboutAds()" class="flex items-center gap-[3vw] px-[3vw] py-[1vh] mt-[3vh]">
+        <div class="w-[6vw] aspect-square">
+          <svg width="100%" height="100%" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1447_588)">
+              <path
+                d="M11.75 21.625C17.3419 21.625 21.875 17.0919 21.875 11.5C21.875 5.90812 17.3419 1.375 11.75 1.375C6.15812 1.375 1.625 5.90812 1.625 11.5C1.625 17.0919 6.15812 21.625 11.75 21.625Z"
+                stroke="#2A3C5D" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M10.625 10.375C10.9234 10.375 11.2095 10.4597 11.4205 10.6104C11.6315 10.7611 11.75 10.9655 11.75 11.1786V15.1964C11.75 15.4095 11.8685 15.6139 12.0795 15.7646C12.2905 15.9153 12.5766 16 12.875 16"
+                stroke="#2A3C5D" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M11.75 8.125C12.3713 8.125 12.875 7.62132 12.875 7C12.875 6.37868 12.3713 5.875 11.75 5.875C11.1287 5.875 10.625 6.37868 10.625 7C10.625 7.62132 11.1287 8.125 11.75 8.125Z"
+                fill="#2A3C5D" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1447_588">
+                <rect width="22.5" height="22.5" fill="white" transform="translate(0.5 0.25)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <p class="text-[4vw]">About ads by Eco Mobile</p>
+      </div>
+      <div onclick="removeAds()" class="flex items-center gap-[3vw] px-[3vw] py-[1vh] mt-[1vh]">
+        <div class="w-[6vw] aspect-square">
+          <svg width="100%" height="100%" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11.75" cy="12" r="10.4062" stroke="#0085FF" stroke-width="1.6875" />
+            <path
+              d="M8.2782 9.11975L6.10291 15.75H4.35059L7.32239 7.75195H8.4375L8.2782 9.11975ZM10.0854 15.75L7.90466 9.11975L7.72888 7.75195H8.85498L11.8433 15.75H10.0854ZM9.98657 12.7727V14.0636H5.76233V12.7727H9.98657Z"
+              fill="#0085FF" />
+            <path
+              d="M15.0403 15.75H13.299L13.3099 14.4646H15.0403C15.4724 14.4646 15.8368 14.3676 16.1334 14.1735C16.4301 13.9757 16.6534 13.6882 16.8036 13.311C16.9574 12.9338 17.0343 12.4779 17.0343 11.9432V11.5532C17.0343 11.1431 16.9904 10.7823 16.9025 10.4711C16.8182 10.1598 16.6919 9.89795 16.5234 9.68555C16.355 9.47314 16.1481 9.31384 15.9027 9.20764C15.6573 9.09778 15.3754 9.04285 15.0568 9.04285H13.266V7.75195H15.0568C15.5914 7.75195 16.0803 7.84351 16.5234 8.02661C16.9702 8.20605 17.3566 8.46423 17.6825 8.80115C18.0084 9.13806 18.2593 9.54089 18.4351 10.0096C18.6145 10.4747 18.7042 10.9929 18.7042 11.5642V11.9432C18.7042 12.5109 18.6145 13.0291 18.4351 13.4978C18.2593 13.9666 18.0084 14.3694 17.6825 14.7063C17.3602 15.0396 16.9739 15.2977 16.5234 15.4808C16.0767 15.6603 15.5823 15.75 15.0403 15.75ZM14.2328 7.75195V15.75H12.5848V7.75195H14.2328Z"
+              fill="#0085FF" />
+            <path d="M3.78125 5.4375L18.7812 19.5" stroke="#0085FF" stroke-width="1.6875" stroke-linecap="square"
+              stroke-linejoin="round" />
+          </svg>
+
+        </div>
+        <p class="text-[4vw] text-[#0085FF]">Remove all ads</p>
+      </div>
+    </div>
+  </div>
+  <div id="step-1" class="w-full h-full relative bg-white">
+    <div id="banner"
+      class="absolute top-[-15vh] left-0 w-full h-[15vh] bg-white rounded-b-md transition-all duration-700">
+      <div class="flex items-center gap-[2%] w-full pl-[3%] h-full">
+        <img src="{{icon}}" alt="icon" class="object-contain rounded-md h-[10vh] aspect-square shrink-0"
+          onerror="this.style.display='none'" />
+        <div class="flex flex-col gap-[2%] mr-[30%]">
+          <h2 class="font-semibold text-[4vw] line-clamp-1 text-[#2A3C5D]">
+            {{titleApp}}
+          </h2>
+          <span class="text-[2.5vw] text-[#64738D] line-clamp-2 leading-tight">
+            {{description}}
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-[85%] relative">
+      <video id="video" class="w-full h-full aspect-[9/16]" onplaying="videoOnPlaying()" onpause="videoOnPause()"
+        onended="videoOnEnded()">
+        <source src="https://cross.ecomobileapp.com/uploads/media/wallpaper/videos/MNKLPDWu.mp4" type="video/mp4">
+      </video>
+      <div class="absolute top-1/2 -translate-y-1/2 w-full h-[80%] bg-transparent" onclick="togglePlay()">
+        <button class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[25vw] aspect-square">
+          <svg id="play" class="hidden" width="100%" height="100%" viewBox="0 0 76 76" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_1121_1033)">
+              <path
+                d="M38 20C28.0589 20 20 28.0589 20 38C20 47.9411 28.0589 56 38 56C47.9411 56 56 47.9411 56 38C56 28.0589 47.9411 20 38 20Z"
+                fill="#919FAF" fill-opacity="0.5" />
+              <path
+                d="M21 38C21 28.6112 28.6112 21 38 21C47.3888 21 55 28.6112 55 38C55 47.3888 47.3888 55 38 55C28.6112 55 21 47.3888 21 38Z"
+                stroke="white" stroke-opacity="0.5" stroke-width="2" />
+              <path
+                d="M33.0815 31.9032V44.097C33.0815 44.8668 33.9149 45.3479 34.5815 44.963L45.1417 38.8661C45.8083 38.4812 45.8083 37.519 45.1417 37.1341L34.5815 31.0372C33.9149 30.6523 33.0815 31.1334 33.0815 31.9032Z"
+                fill="white" />
+            </g>
+            <defs>
+              <filter id="filter0_d_1121_1033" x="0" y="0" width="76" height="76" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha" />
+                <feOffset />
+                <feGaussianBlur stdDeviation="10" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0.178353 0 0 0 0 0.178353 0 0 0 0 0.178353 0 0 0 0.25 0" />
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1121_1033" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1121_1033" result="shape" />
+              </filter>
+            </defs>
+          </svg>
+          <svg id="pause" class="hidden" width="100%" height="100%" viewBox="0 0 76 76" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_1121_1035)">
+              <path
+                d="M38 20C28.0589 20 20 28.0589 20 38C20 47.9411 28.0589 56 38 56C47.9411 56 56 47.9411 56 38C56 28.0589 47.9411 20 38 20Z"
+                fill="#919FAF" fill-opacity="0.5" />
+              <path
+                d="M21 38C21 28.6112 28.6112 21 38 21C47.3888 21 55 28.6112 55 38C55 47.3888 47.3888 55 38 55C28.6112 55 21 47.3888 21 38Z"
+                stroke="white" stroke-opacity="0.5" stroke-width="2" />
+              <rect x="32" y="31" width="5" height="14" rx="2" fill="white" />
+              <rect x="39" y="31" width="5" height="14" rx="2" fill="white" />
+            </g>
+            <defs>
+              <filter id="filter0_d_1121_1035" x="0" y="0" width="76" height="76" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha" />
+                <feOffset />
+                <feGaussianBlur stdDeviation="10" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0.178353 0 0 0 0 0.178353 0 0 0 0 0.178353 0 0 0 0.25 0" />
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1121_1035" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1121_1035" result="shape" />
+              </filter>
+            </defs>
+          </svg>
+
+
+        </button>
+      </div>
+      <button class="h-[3%] absolute bottom-[2%] left-[2%] aspect-[3/2]" onclick="toggleMuted()">
+        <svg id="mute" class="hidden" width="100%" height="100%" viewBox="0 0 20 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="20" width="20" height="20" rx="8" transform="rotate(180 20 20)" fill="#919FAF"
+            fill-opacity="0.5" />
+          <path
+            d="M4.57999 12.3476H6.59196L9.65991 14.5556C9.74681 14.6176 9.8491 14.6545 9.95557 14.6622C10.062 14.67 10.1686 14.6483 10.2636 14.5996C10.3586 14.5509 10.4383 14.4769 10.4941 14.3859C10.5499 14.2949 10.5796 14.1903 10.5799 14.0836V5.5797C10.5799 5.3637 10.4599 5.16371 10.2639 5.06371C10.0719 4.96371 9.83591 4.98371 9.65991 5.10771L6.59196 7.31567H4.57999C4.26 7.31567 4 7.57567 4 7.89566V11.7676C4 12.0876 4.26 12.3476 4.57999 12.3476ZM15.8298 8.02046C15.7759 7.96651 15.7119 7.92371 15.6415 7.89451C15.571 7.8653 15.4955 7.85027 15.4192 7.85027C15.343 7.85027 15.2674 7.8653 15.197 7.89451C15.1265 7.92371 15.0625 7.96651 15.0086 8.02046L14.0186 9.01045L13.0283 8.02046C12.9745 7.96614 12.9105 7.92298 12.8399 7.89347C12.7694 7.86396 12.6937 7.84867 12.6173 7.84849C12.5408 7.8483 12.4651 7.86322 12.3944 7.8924C12.3238 7.92157 12.2595 7.96442 12.2055 8.01848C12.1514 8.07254 12.1086 8.13675 12.0794 8.20742C12.0502 8.27808 12.0353 8.35382 12.0355 8.43027C12.0357 8.50673 12.051 8.58239 12.0805 8.65292C12.11 8.72345 12.1531 8.78745 12.2075 8.84125L13.1975 9.83163L12.2075 10.8216C12.1535 10.8755 12.1108 10.9395 12.0816 11.0099C12.0524 11.0803 12.0374 11.1558 12.0373 11.2321C12.0373 11.3083 12.0523 11.3838 12.0815 11.4542C12.1106 11.5247 12.1534 11.5887 12.2073 11.6426C12.2612 11.6965 12.3251 11.7393 12.3956 11.7685C12.466 11.7977 12.5415 11.8127 12.6177 11.8127C12.694 11.8128 12.7695 11.7978 12.8399 11.7686C12.9103 11.7394 12.9743 11.6967 13.0283 11.6428L14.0186 10.6524L15.0086 11.6428C15.0624 11.6969 15.1264 11.7399 15.1969 11.7692C15.2673 11.7986 15.3429 11.8137 15.4192 11.8137C15.4955 11.8137 15.5711 11.7986 15.6416 11.7692C15.712 11.7399 15.776 11.6969 15.8298 11.6428C15.8838 11.5889 15.9266 11.5249 15.9558 11.4544C15.985 11.384 16 11.3085 16 11.2322C16 11.1559 15.985 11.0804 15.9558 11.01C15.9266 10.9395 15.8838 10.8755 15.8298 10.8216L14.8394 9.83163L15.8298 8.84125C15.9387 8.7324 15.9998 8.58478 15.9998 8.43085C15.9998 8.27693 15.9387 8.1293 15.8298 8.02046Z"
+            fill="white" />
+        </svg>
+        <svg id="unmute" class="" width="100%" height="100%" viewBox="0 0 20 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="20" width="20" height="20" rx="8" transform="rotate(180 20 20)" fill="#919FAF"
+            fill-opacity="0.5" />
+          <path
+            d="M4.57999 12.3476H6.59196L9.65991 14.5556C9.74681 14.6176 9.8491 14.6545 9.95557 14.6622C10.062 14.67 10.1686 14.6483 10.2636 14.5996C10.3586 14.5509 10.4383 14.4769 10.4941 14.3859C10.5499 14.2949 10.5796 14.1903 10.5799 14.0836V5.5797C10.5799 5.3637 10.4599 5.16371 10.2639 5.06371C10.0719 4.96371 9.83591 4.98371 9.65991 5.10771L6.59196 7.31567H4.57999C4.26 7.31567 4 7.57567 4 7.89566V11.7676C4 12.0876 4.26 12.3476 4.57999 12.3476Z"
+            fill="white" />
+          <path
+            d="M14.1981 5.5C13.9836 5.28754 13.6375 5.28918 13.425 5.50369C13.2126 5.7182 13.2142 6.06432 13.4287 6.27678C14.3819 7.22085 14.9067 8.47492 14.9067 9.80793C14.9067 11.1437 14.3819 12.3992 13.4287 13.3433C13.2142 13.5558 13.2126 13.9019 13.425 14.1164C13.4758 14.1678 13.5363 14.2086 13.603 14.2364C13.6696 14.2642 13.7412 14.2785 13.8134 14.2784C13.9575 14.2785 14.0959 14.2216 14.1981 14.1201C15.3601 12.9691 16 11.4377 16 9.8079C16 8.18086 15.3601 6.65095 14.1981 5.5Z"
+            fill="white" />
+          <path
+            d="M12.9733 11.3599L12.9607 11.383C12.8617 11.5654 12.6738 11.6688 12.4799 11.6688C12.3889 11.6688 12.2993 11.646 12.2195 11.6024C11.9542 11.4583 11.8559 11.1264 12 10.8612L12.0134 10.8365C12.1232 10.6352 12.2891 10.3309 12.2891 9.81022C12.2891 9.26923 12.118 8.96752 12.0049 8.76791C11.856 8.50524 11.9483 8.17165 12.2109 8.02276C12.4736 7.87388 12.8072 7.96625 12.9561 8.22888C13.0945 8.47307 13.3824 8.98104 13.3824 9.81022C13.3824 10.6096 13.1163 11.0977 12.9733 11.3599Z"
+            fill="white" />
+        </svg>
+      </button>
+      <div class="absolute bottom-[2%] right-[2%] flex gap-[1vw] h-[3%]">
+        <button class="h-full aspect-[3/2]">
+          <svg width="100%" height="100%" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="18.6001" y="12" width="18.6002" height="12.0001" rx="4.80006" transform="rotate(180 18.6001 12)"
+              fill="#919FAF" fill-opacity="0.5" />
+            <path
+              d="M8.56469 7.5623L8.38012 7.07714H6.80862L6.62405 7.57285C6.55197 7.76621 6.49045 7.89717 6.43947 7.96572C6.3885 8.03252 6.305 8.06592 6.18898 8.06592C6.09054 8.06592 6.00353 8.02988 5.92794 7.95781C5.85236 7.88574 5.81456 7.804 5.81456 7.71259C5.81456 7.65986 5.82335 7.60537 5.84093 7.54912C5.85851 7.49286 5.88751 7.41464 5.92794 7.31444L6.91672 4.80426C6.94485 4.73219 6.97825 4.64605 7.01692 4.54586C7.05735 4.4439 7.09954 4.35953 7.14349 4.29273C7.18919 4.22593 7.24808 4.17232 7.32015 4.13189C7.39398 4.0897 7.48451 4.06861 7.59173 4.06861C7.70072 4.06861 7.79125 4.0897 7.86332 4.13189C7.93715 4.17232 7.99603 4.22505 8.03998 4.29009C8.08568 4.35513 8.12348 4.42545 8.15336 4.50103C8.185 4.57486 8.22455 4.67418 8.27201 4.79898L9.28189 7.29335C9.36099 7.4832 9.40054 7.62119 9.40054 7.70732C9.40054 7.79697 9.36275 7.87959 9.28716 7.95518C9.21333 8.029 9.12368 8.06592 9.01821 8.06592C8.95669 8.06592 8.90396 8.05449 8.86001 8.03164C8.81606 8.01055 8.77915 7.98154 8.74927 7.94463C8.71938 7.90596 8.68686 7.84795 8.65171 7.7706C8.61831 7.6915 8.5893 7.62207 8.56469 7.5623ZM7.01428 6.48914H8.16918L7.58646 4.89391L7.01428 6.48914ZM11.9002 7.65459V7.58339C11.8035 7.69414 11.7077 7.78467 11.6128 7.85498C11.5196 7.92353 11.4177 7.97539 11.3069 8.01055C11.1979 8.04746 11.0784 8.06592 10.9483 8.06592C10.776 8.06592 10.6161 8.02988 10.4684 7.95781C10.3225 7.88398 10.196 7.77939 10.0887 7.64404C9.98151 7.50869 9.89977 7.3496 9.84352 7.16679C9.78903 6.98397 9.76178 6.78622 9.76178 6.57352C9.76178 6.12351 9.87164 5.77282 10.0914 5.52145C10.3111 5.27008 10.6003 5.1444 10.9589 5.1444C11.1663 5.1444 11.3412 5.18043 11.4836 5.25251C11.626 5.32282 11.7648 5.43181 11.9002 5.57946V4.51685C11.9002 4.36919 11.9292 4.25757 11.9872 4.18199C12.047 4.1064 12.1313 4.06861 12.2403 4.06861C12.3493 4.06861 12.4328 4.10376 12.4908 4.17408C12.5506 4.24263 12.5805 4.34458 12.5805 4.47994V7.65459C12.5805 7.7917 12.5488 7.89453 12.4855 7.96309C12.4223 8.03164 12.3405 8.06592 12.2403 8.06592C12.1419 8.06592 12.0601 8.03076 11.9951 7.96045C11.9318 7.88838 11.9002 7.78642 11.9002 7.65459ZM10.4842 6.59725C10.4842 6.79237 10.5141 6.95848 10.5739 7.09559C10.6354 7.23271 10.7189 7.33642 10.8244 7.40673C10.9299 7.47529 11.045 7.50956 11.1698 7.50956C11.2964 7.50956 11.4115 7.47704 11.5152 7.412C11.6207 7.34521 11.7042 7.24413 11.7657 7.10878C11.829 6.97167 11.8606 6.80116 11.8606 6.59725C11.8606 6.40564 11.829 6.24129 11.7657 6.10418C11.7042 5.96531 11.6198 5.85984 11.5126 5.78777C11.4071 5.71394 11.2911 5.67702 11.1645 5.67702C11.0327 5.67702 10.9149 5.71482 10.8112 5.7904C10.7075 5.86423 10.6266 5.97146 10.5686 6.11209C10.5124 6.25096 10.4842 6.41268 10.4842 6.59725Z"
+              fill="white" />
+          </svg>
+        </button>
+        <button onclick="onInfoButtonClick()" class="h-full aspect-square">
+          <svg width="100%" height="100%" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1111_1856)">
+              <rect width="10" height="10" rx="4" fill="#919FAF" fill-opacity="0.5" />
+              <path
+                d="M6.64889 5.56296C6.35231 6.07665 6.1367 6.4497 5.94836 6.71766C5.75939 6.98653 5.61624 7.12173 5.47606 7.18709C5.17443 7.32775 4.82601 7.32775 4.52438 7.18709C4.3842 7.12173 4.24105 6.98653 4.05208 6.71766C3.86374 6.4497 3.64813 6.07665 3.35155 5.56296C3.05497 5.04927 2.83969 4.67602 2.7018 4.37893C2.56344 4.08085 2.51792 3.88928 2.5314 3.7352C2.56041 3.40366 2.73461 3.10193 3.00724 2.91104C3.13394 2.82232 3.3226 2.76596 3.64994 2.73673C3.97617 2.70761 4.40706 2.70742 5.00022 2.70742C5.59338 2.70742 6.02427 2.70761 6.3505 2.73674C6.67784 2.76596 6.8665 2.82232 6.9932 2.91104C7.26583 3.10193 7.44003 3.40366 7.46904 3.7352C7.48252 3.88928 7.437 4.08085 7.29864 4.37894C7.16075 4.67602 6.94547 5.04927 6.64889 5.56296Z"
+                stroke="white" stroke-width="0.41483" />
+              <path
+                d="M5.18785 4.37096V5.54506C5.18785 5.62641 5.1685 5.68792 5.12981 5.72959C5.09112 5.77125 5.04201 5.79208 4.98249 5.79208C4.92297 5.79208 4.87436 5.77076 4.83666 5.7281C4.79995 5.68544 4.7816 5.62443 4.7816 5.54506V4.38287C4.7816 4.30251 4.79995 4.24199 4.83666 4.20132C4.87436 4.16065 4.92297 4.14031 4.98249 4.14031C5.04201 4.14031 5.09112 4.16065 5.12981 4.20132C5.1685 4.24199 5.18785 4.29854 5.18785 4.37096ZM4.98695 3.95132C4.93041 3.95132 4.8818 3.93396 4.84112 3.89924C4.80144 3.86452 4.7816 3.81541 4.7816 3.75192C4.7816 3.69438 4.80193 3.64726 4.84261 3.61055C4.88428 3.57285 4.93239 3.554 4.98695 3.554C5.03953 3.554 5.08616 3.57087 5.12683 3.6046C5.16751 3.63833 5.18785 3.68743 5.18785 3.75192C5.18785 3.81442 5.168 3.86352 5.12832 3.89924C5.08864 3.93396 5.04152 3.95132 4.98695 3.95132Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1111_1856">
+                <rect width="10" height="10" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <button onClick="onInstallButtonClick()"
+      class="absolute left-1/2 -translate-x-1/2 bottom-[5.5%]  w-[70%] h-[6vh] rounded-full bg-[#0085FF]">
+      <span class="text-white text-center line-clamp-1 font-bold text-[4vw] break-all px-[1.5vw]">
+        {{CTA}}
+      </span>
+    </button>
+  </div>
+  <div id="step-2" class="w-full h-full bg-gradient-to-b from-[#E0F0FF] to-white relative ">
+
+    <button class="h-[3%] absolute bottom-[2%] left-[2%] aspect-[3/2]">
+      <svg width="100%" height="100%" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="18.6001" y="12" width="18.6002" height="12.0001" rx="4.80006" transform="rotate(180 18.6001 12)"
+          fill="#919FAF" fill-opacity="0.5" />
+        <path
+          d="M8.56469 7.5623L8.38012 7.07714H6.80862L6.62405 7.57285C6.55197 7.76621 6.49045 7.89717 6.43947 7.96572C6.3885 8.03252 6.305 8.06592 6.18898 8.06592C6.09054 8.06592 6.00353 8.02988 5.92794 7.95781C5.85236 7.88574 5.81456 7.804 5.81456 7.71259C5.81456 7.65986 5.82335 7.60537 5.84093 7.54912C5.85851 7.49286 5.88751 7.41464 5.92794 7.31444L6.91672 4.80426C6.94485 4.73219 6.97825 4.64605 7.01692 4.54586C7.05735 4.4439 7.09954 4.35953 7.14349 4.29273C7.18919 4.22593 7.24808 4.17232 7.32015 4.13189C7.39398 4.0897 7.48451 4.06861 7.59173 4.06861C7.70072 4.06861 7.79125 4.0897 7.86332 4.13189C7.93715 4.17232 7.99603 4.22505 8.03998 4.29009C8.08568 4.35513 8.12348 4.42545 8.15336 4.50103C8.185 4.57486 8.22455 4.67418 8.27201 4.79898L9.28189 7.29335C9.36099 7.4832 9.40054 7.62119 9.40054 7.70732C9.40054 7.79697 9.36275 7.87959 9.28716 7.95518C9.21333 8.029 9.12368 8.06592 9.01821 8.06592C8.95669 8.06592 8.90396 8.05449 8.86001 8.03164C8.81606 8.01055 8.77915 7.98154 8.74927 7.94463C8.71938 7.90596 8.68686 7.84795 8.65171 7.7706C8.61831 7.6915 8.5893 7.62207 8.56469 7.5623ZM7.01428 6.48914H8.16918L7.58646 4.89391L7.01428 6.48914ZM11.9002 7.65459V7.58339C11.8035 7.69414 11.7077 7.78467 11.6128 7.85498C11.5196 7.92353 11.4177 7.97539 11.3069 8.01055C11.1979 8.04746 11.0784 8.06592 10.9483 8.06592C10.776 8.06592 10.6161 8.02988 10.4684 7.95781C10.3225 7.88398 10.196 7.77939 10.0887 7.64404C9.98151 7.50869 9.89977 7.3496 9.84352 7.16679C9.78903 6.98397 9.76178 6.78622 9.76178 6.57352C9.76178 6.12351 9.87164 5.77282 10.0914 5.52145C10.3111 5.27008 10.6003 5.1444 10.9589 5.1444C11.1663 5.1444 11.3412 5.18043 11.4836 5.25251C11.626 5.32282 11.7648 5.43181 11.9002 5.57946V4.51685C11.9002 4.36919 11.9292 4.25757 11.9872 4.18199C12.047 4.1064 12.1313 4.06861 12.2403 4.06861C12.3493 4.06861 12.4328 4.10376 12.4908 4.17408C12.5506 4.24263 12.5805 4.34458 12.5805 4.47994V7.65459C12.5805 7.7917 12.5488 7.89453 12.4855 7.96309C12.4223 8.03164 12.3405 8.06592 12.2403 8.06592C12.1419 8.06592 12.0601 8.03076 11.9951 7.96045C11.9318 7.88838 11.9002 7.78642 11.9002 7.65459ZM10.4842 6.59725C10.4842 6.79237 10.5141 6.95848 10.5739 7.09559C10.6354 7.23271 10.7189 7.33642 10.8244 7.40673C10.9299 7.47529 11.045 7.50956 11.1698 7.50956C11.2964 7.50956 11.4115 7.47704 11.5152 7.412C11.6207 7.34521 11.7042 7.24413 11.7657 7.10878C11.829 6.97167 11.8606 6.80116 11.8606 6.59725C11.8606 6.40564 11.829 6.24129 11.7657 6.10418C11.7042 5.96531 11.6198 5.85984 11.5126 5.78777C11.4071 5.71394 11.2911 5.67702 11.1645 5.67702C11.0327 5.67702 10.9149 5.71482 10.8112 5.7904C10.7075 5.86423 10.6266 5.97146 10.5686 6.11209C10.5124 6.25096 10.4842 6.41268 10.4842 6.59725Z"
+          fill="white" />
+      </svg>
+    </button>
+
+    <button onclick="onInfoButtonClick()" class="h-[3%] absolute bottom-[2%] right-[2%] aspect-square">
+      <svg width="100%" height="100%" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1111_1856)">
+          <rect width="10" height="10" rx="4" fill="#919FAF" fill-opacity="0.5" />
+          <path
+            d="M6.64889 5.56296C6.35231 6.07665 6.1367 6.4497 5.94836 6.71766C5.75939 6.98653 5.61624 7.12173 5.47606 7.18709C5.17443 7.32775 4.82601 7.32775 4.52438 7.18709C4.3842 7.12173 4.24105 6.98653 4.05208 6.71766C3.86374 6.4497 3.64813 6.07665 3.35155 5.56296C3.05497 5.04927 2.83969 4.67602 2.7018 4.37893C2.56344 4.08085 2.51792 3.88928 2.5314 3.7352C2.56041 3.40366 2.73461 3.10193 3.00724 2.91104C3.13394 2.82232 3.3226 2.76596 3.64994 2.73673C3.97617 2.70761 4.40706 2.70742 5.00022 2.70742C5.59338 2.70742 6.02427 2.70761 6.3505 2.73674C6.67784 2.76596 6.8665 2.82232 6.9932 2.91104C7.26583 3.10193 7.44003 3.40366 7.46904 3.7352C7.48252 3.88928 7.437 4.08085 7.29864 4.37894C7.16075 4.67602 6.94547 5.04927 6.64889 5.56296Z"
+            stroke="white" stroke-width="0.41483" />
+          <path
+            d="M5.18785 4.37096V5.54506C5.18785 5.62641 5.1685 5.68792 5.12981 5.72959C5.09112 5.77125 5.04201 5.79208 4.98249 5.79208C4.92297 5.79208 4.87436 5.77076 4.83666 5.7281C4.79995 5.68544 4.7816 5.62443 4.7816 5.54506V4.38287C4.7816 4.30251 4.79995 4.24199 4.83666 4.20132C4.87436 4.16065 4.92297 4.14031 4.98249 4.14031C5.04201 4.14031 5.09112 4.16065 5.12981 4.20132C5.1685 4.24199 5.18785 4.29854 5.18785 4.37096ZM4.98695 3.95132C4.93041 3.95132 4.8818 3.93396 4.84112 3.89924C4.80144 3.86452 4.7816 3.81541 4.7816 3.75192C4.7816 3.69438 4.80193 3.64726 4.84261 3.61055C4.88428 3.57285 4.93239 3.554 4.98695 3.554C5.03953 3.554 5.08616 3.57087 5.12683 3.6046C5.16751 3.63833 5.18785 3.68743 5.18785 3.75192C5.18785 3.81442 5.168 3.86352 5.12832 3.89924C5.08864 3.93396 5.04152 3.95132 4.98695 3.95132Z"
+            fill="white" />
+        </g>
+        <defs>
+          <clipPath id="clip0_1111_1856">
+            <rect width="10" height="10" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </button>
+
+    <div class="absolute top-[12.5%] h-[25%] aspect-square left-1/2 -translate-x-1/2" onClick="onInstallButtonClick()">
+      <img src="{{icon}}" alt="" class="w-full h-full object-contain rounded-2xl" />
+    </div>
+    <div class="absolute top-[41.5%] max-w-[80%] left-1/2 -translate-x-1/2 flex flex-col gap-[3vw]"
+      onClick="onInstallButtonClick()">
+      <h1 class="text-center text-[6vw] font-bold text-[#2A3C5D] line-clamp-2 leading-tight">
+        {{titleApp}}
+      </h1>
+      <p class="text-center text-[3.5vw] text-[#64738D] line-clamp-2">
+        {{description}}
+      </p>
+      <div class="flex gap-[4vw] mx-[4vw] mt-[3vh] overflow-hidden">
+        <div class="flex flex-col gap-[0.7vh]">
+          <div class="flex items-center gap-[1vw]">
+            <p class="text-[#2A3C5D] text-[4vw] font-medium">{{appRating}}</p>
+            <div class="h-[3vh] aspect-square">
+              <svg width="100%" height="100%" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.47534 0L10.2715 5.52786H16.0838L11.3815 8.94427L13.1776 14.4721L8.47534 11.0557L3.77306 14.4721L5.56917 8.94427L0.866889 5.52786H6.67923L8.47534 0Z"
+                  fill="#64738D" />
+              </svg>
+
+            </div>
+          </div>
+          <label class="text-[#64738D] text-[4vw]">Ratings</label>
+        </div>
+        <div class="h-[6vh] w-[1px] bg-[#818386] my-auto"></div>
+        <div class="flex flex-col gap-[0.7vh]">
+          <div class="flex items-center gap-[1vw]">
+            <p class="text-[#2A3C5D] text-[4vw] font-medium">{{appDownload}}</p>
+            <div class="h-[3vh] aspect-square">
+              <svg width="100%" height="100%" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5481 6.875L8.1731 9.5L10.7981 6.875" stroke="#64738D" stroke-width="1.60456"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8.1731 2.5V9.5" stroke="#64738D" stroke-width="1.60456" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M13.6731 9.5V13C13.6731 13.1326 13.6204 13.2598 13.5266 13.3536C13.4329 13.4473 13.3057 13.5 13.1731 13.5H3.1731C3.04049 13.5 2.91331 13.4473 2.81954 13.3536C2.72577 13.2598 2.6731 13.1326 2.6731 13V9.5"
+                  stroke="#64738D" stroke-width="1.60456" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+
+            </div>
+          </div>
+          <label class="text-[#64738D] text-[4vw]">Downloads</label>
+        </div>
+        <div class="h-[6vh] w-[1px] bg-[#818386] my-auto"></div>
+        <div class="flex flex-col gap-[0.7vh]">
+          <div class="flex items-center gap-[1vw]">
+            <p class="text-[#2A3C5D] text-[4vw] font-medium">{{appSize}}</p>
+          </div>
+          <label class="text-[#64738D] text-[4vw]">Size</label>
+        </div>
+      </div>
+    </div>
+    <button onClick="onInstallButtonClick()"
+      class="absolute left-1/2 -translate-x-1/2 bottom-[12.5%]  w-[70%] h-[6vh] rounded-full bg-[#0085FF]">
+      <span class="text-white text-[4vw] text-center line-clamp-1 font-bold break-all px-[1.5vw]">
+        {{CTA}}
+      </span>
+    </button>
+
+    <div onclick="onBack()" id="about"
+      class="hidden absolute inset-0 w-full h-full z-10 bg-black bg-opacity-70 items-end">
+      <div class="bg-white  rounded-t-2xl w-full h-[20vh] flex flex-col">
+        <div class="h-[0.5vh] w-[10vw] bg-[#64738D] rounded-full mx-auto mt-[2vh]"></div>
+        <div onclick="aboutAds()" class="flex items-center gap-[3vw] px-[3vw] py-[1vh] mt-[3vh]">
+          <div class="w-[6vw] aspect-square">
+            <svg width="100%" height="100%" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1447_588)">
+                <path
+                  d="M11.75 21.625C17.3419 21.625 21.875 17.0919 21.875 11.5C21.875 5.90812 17.3419 1.375 11.75 1.375C6.15812 1.375 1.625 5.90812 1.625 11.5C1.625 17.0919 6.15812 21.625 11.75 21.625Z"
+                  stroke="#2A3C5D" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M10.625 10.375C10.9234 10.375 11.2095 10.4597 11.4205 10.6104C11.6315 10.7611 11.75 10.9655 11.75 11.1786V15.1964C11.75 15.4095 11.8685 15.6139 12.0795 15.7646C12.2905 15.9153 12.5766 16 12.875 16"
+                  stroke="#2A3C5D" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M11.75 8.125C12.3713 8.125 12.875 7.62132 12.875 7C12.875 6.37868 12.3713 5.875 11.75 5.875C11.1287 5.875 10.625 6.37868 10.625 7C10.625 7.62132 11.1287 8.125 11.75 8.125Z"
+                  fill="#2A3C5D" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1447_588">
+                  <rect width="22.5" height="22.5" fill="white" transform="translate(0.5 0.25)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <p class="text-[4vw]">About ads by Eco Mobile</p>
+        </div>
+        <div onclick="removeAds()" class="flex items-center gap-[3vw] px-[3vw] py-[1vh] mt-[1vh]">
+          <div class="w-[6vw] aspect-square">
+            <svg width="100%" height="100%" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11.75" cy="12" r="10.4062" stroke="#0085FF" stroke-width="1.6875" />
+              <path
+                d="M8.2782 9.11975L6.10291 15.75H4.35059L7.32239 7.75195H8.4375L8.2782 9.11975ZM10.0854 15.75L7.90466 9.11975L7.72888 7.75195H8.85498L11.8433 15.75H10.0854ZM9.98657 12.7727V14.0636H5.76233V12.7727H9.98657Z"
+                fill="#0085FF" />
+              <path
+                d="M15.0403 15.75H13.299L13.3099 14.4646H15.0403C15.4724 14.4646 15.8368 14.3676 16.1334 14.1735C16.4301 13.9757 16.6534 13.6882 16.8036 13.311C16.9574 12.9338 17.0343 12.4779 17.0343 11.9432V11.5532C17.0343 11.1431 16.9904 10.7823 16.9025 10.4711C16.8182 10.1598 16.6919 9.89795 16.5234 9.68555C16.355 9.47314 16.1481 9.31384 15.9027 9.20764C15.6573 9.09778 15.3754 9.04285 15.0568 9.04285H13.266V7.75195H15.0568C15.5914 7.75195 16.0803 7.84351 16.5234 8.02661C16.9702 8.20605 17.3566 8.46423 17.6825 8.80115C18.0084 9.13806 18.2593 9.54089 18.4351 10.0096C18.6145 10.4747 18.7042 10.9929 18.7042 11.5642V11.9432C18.7042 12.5109 18.6145 13.0291 18.4351 13.4978C18.2593 13.9666 18.0084 14.3694 17.6825 14.7063C17.3602 15.0396 16.9739 15.2977 16.5234 15.4808C16.0767 15.6603 15.5823 15.75 15.0403 15.75ZM14.2328 7.75195V15.75H12.5848V7.75195H14.2328Z"
+                fill="#0085FF" />
+              <path d="M3.78125 5.4375L18.7812 19.5" stroke="#0085FF" stroke-width="1.6875" stroke-linecap="square"
+                stroke-linejoin="round" />
+            </svg>
+
+          </div>
+          <p class="text-[4vw] text-[#0085FF]">Remove all ads</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var bannerElm = document.getElementById('banner')
+    setTimeout(function () {
+      bannerElm.classList.remove('top-[-15vh]')
+      bannerElm.classList.add('top-0')
+    }, 3000)
+
+    var playElm = document.getElementById('play');
+    var pauseElm = document.getElementById('pause');
+    var video = document.getElementById('video');
+    var muteElm = document.getElementById('mute');
+    var unmuteElm = document.getElementById('unmute');
+    let timeout;
+
+    var autoplay = '{{autoplay}}';
+    if (autoplay === 'true') {
+      video.autoplay = true;
+    } else {
+      video.autoplay = false;
+    }
+
+    var isMuted = '{{muted}}';
+    if (isMuted === 'true') {
+      video.muted = true;
+      muteElm.classList.remove('hidden')
+      unmuteElm.classList.add('hidden')
+    } else {
+      video.muted = false;
+      muteElm.classList.add('hidden')
+      unmuteElm.classList.remove('hidden')
+    }
+
+    var toggleMuted = function () {
+      if (video.muted) {
+        muteElm.classList.add('hidden')
+        unmuteElm.classList.remove('hidden')
+      } else {
+        muteElm.classList.remove('hidden')
+        unmuteElm.classList.add('hidden')
+      }
+      video.muted = !video.muted
+    }
+
+    function videoOnEnded() {
+      document.getElementById('step-1').classList.add('hidden')
+      document.getElementById('step-2').classList.remove('hidden')
+    }
+
+    function videoOnPlaying() {
+      playElm.classList.remove('hidden');
+      timeout = setTimeout(() => {
+        playElm.classList.add('hidden');
+        pauseElm.classList.add('hidden');
+      }, 2000);
+    }
+
+    function videoOnPause() {
+      pauseElm.classList.remove('hidden');
+      timeout = setTimeout(() => {
+        playElm.classList.add('hidden');
+        pauseElm.classList.add('hidden');
+      }, 2000);
+    }
+
+    var togglePlay = function () {
+      if (timeout) {
+        clearTimeout(timeout);
+        timeout = null;
+      }
+
+      playElm.classList.add('hidden');
+      pauseElm.classList.add('hidden');
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    };
+
+    var closeModal = function () {
+      window.android.closeModal()
+    };
+
+    var removeAds = function () {
+      window.android.removeAds()
+    };
+
+    var aboutAds = function () {
+      window.android.aboutAds()
+    };
+
+    var onInfoButtonClick = function () {
+      var aboutElm = document.getElementById('about');
+      aboutElm.classList.remove('hidden');
+      aboutElm.classList.add('flex');
+      try {
+        window.android.onInfoButtonClick()
+      } catch (error) {
+        console.error(error)
+      }
+    };
+
+    var onInstallButtonClick = function () {
+      var linkTracking = '{{linkTracking}}'
+      window.android.onInstallButtonClick(linkTracking)
+    };
+
+    var onCloseButtonClick = function () {
+      window.android.onCloseButtonClick()
+    };
+
+    var onBack = function () {
+      var aboutElm = document.getElementById('about');
+      aboutElm.classList.add('hidden');
+      aboutElm.classList.remove('flex');
+      window.android.closeInfo()
+    }
+  </script>
+</body>
+
+</html>
